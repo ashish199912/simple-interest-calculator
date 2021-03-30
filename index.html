@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Details</title>
+        <link rel="icon" href="details.png" type="image/icon"> 
+        <!------Bootstrap Links---------->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!------End Bootstrap------------->
+        <!------css file links--------->
+                <link rel="stylesheet" href="index-style.css">
+        <!------End of css links------->
+        <!------Javascript links---------------->
+            <script type="text/javascript" src="index-script.js"></script>
+        <!------End of Javascript links---------> 
+    </head>
+
+    <body>
+        <div class="body-container">
+            <h1>Loan information calculator</h1>
+        </div>
+        <br/>
+        <div class="input-text">
+            <center>
+                <table class="table" style="max-width: 35% !important;">
+                    <tr>
+                        <td class="tdLeft noBorder">Enter the amount of loan</td>
+                        <td class="tdRight noBorder"><input type="number" id="loan" ></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLeft noBorder">Annual percentage rate of interest</td>
+                        <td class="tdRight noBorder"><input type="number" id="interest"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLeft noBorder">Re-payment period in years</td>
+                        <td class="tdRight noBorder"><input type="number" id="year" ></td>
+                    </tr>
+                </table>
+                <input class="btn" type="button" value="Compute" onclick="validation()">
+            </center>
+            <br/>
+
+            <div style="text-align: center;">
+                <p>
+                    <b><u>NOTE</u></b>&nbsp;<b>:-</b>Enter only numeric values (no commas), using decimal points where needed.
+                    Non-numeric values will cause errors.
+                </p> 
+            </div>
+            <br/>
+        </div>
+        <div class="output-container">
+            <h2>Re-Payment details</h2> 
+        </div>
+        <br/>
+        <div class="output-text">
+            <center>
+                <table class="table" width="80%" border="1px" id=outTable>  
+                        <th>Payment No</th> 
+                        <th>Payment Amount</th> 
+                        <th>Principle Amount</th>
+                        <th>Interest Paid</th>
+                        <th>Outstanding Balance</th>
+                    </thead>
+                    
+                    <tbody id="tableBody"> 
+                    </tbody>
+                </table>
+            </center>
+        <br/>
+    </body>
+</html>

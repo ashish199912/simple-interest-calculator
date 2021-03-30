@@ -1,0 +1,38 @@
+
+body{
+  text-align: center;
+}
+h1{
+  
+  margin: 15px 0px 5px 0px;
+  border-bottom: 5px solid green;
+  display: inline-block;    
+}
+.noBorder{
+    border: 0px !important;
+}
+.tdLeft{
+    float:left;
+    margin-right: 50px !important;
+}
+.tdRight{
+  float:right;
+}
+.output-container{
+  border-top:3px dotted black;
+  width:100%
+}
+h2{
+    
+  margin: 15px 0px 5px 0px;
+  border-bottom: 5px solid green;
+  display: inline-block;    
+}
+.btn{
+  width: 10%;
+  font-size: large;
+  background: lightblue;
+}
+.tablebody{
+  align-content: center;
+}
