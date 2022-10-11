@@ -1,2 +1,2 @@
 ### About :
-it is a static web application for calculating Loan Interest for the provided details
+Simple web based responsive application for calculating loan based interest.
